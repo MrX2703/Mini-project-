@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>Company Dashboard</h2>
+
+    <div id="dashboardContainer">
+        <!-- Internship cards will be dynamically loaded here -->
+    </div>
+
+    <button id="addNewCard">Add New Internship</button>
+
+    <!-- Modal for Adding New Internship -->
+    <div id="newCardModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Add New Internship</h2>
+            <form id="newCardForm">
+                <label for="companyName">Name of Company:</label>
+                <input type="text" id="companyName" required>
+
+                <label for="programName">Program Name:</label>
+                <input type="text" id="programName" required>
+
+                <label for="duration">Duration:</label>
+                <input type="text" id="duration" required>
+
+                <label for="startDate">Starting Date:</label>
+                <input type="date" id="startDate" required>
+
+                <label for="endDate">Ending Date:</label>
+                <input type="date" id="endDate" required>
+
+                <label for="mode">Mode:</label>
+                <select id="mode" required>
+                    <option value="online">Online</option>
+                    <option value="offline">Offline</option>
+                </select>
+
+                <label for="type">Type:</label>
+                <select id="type" required>
+                    <option value="free">Free</option>
+                    <option value="paid">Paid</option>
+                </select>
+
+                <label for="fees">Fees (if paid):</label>
+                <input type="text" id="fees">
+
+                <label for="location">Location:</label>
+                <input type="text" id="location" required>
+
+                <label for="mobile">Mobile No:</label>
+                <input type="text" id="mobile" required>
+
+                <label for="email">Company Email:</label>
+                <input type="email" id="email" required>
+
+                <label for="description">Description:</label>
+                <textarea id="description" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
