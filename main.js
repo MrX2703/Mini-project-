@@ -109,7 +109,7 @@ function handleCompanyRegistration() {
         };
 
         // Fetch existing users, add the new one, and simulate saving it back to JSON
-        fetch('data/users.json')
+        fetch('users.json')
             .then(response => response.json())
             .then(users => {
                 users.push(newUser);
