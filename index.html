@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internship Portal</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="company-login.html">Company Login</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav>
+
+    <div class="internship-container" id="internshipContainer">
+        <!-- Internship cards will be dynamically loaded here -->
+    </div>
+
+    <!-- Modal for Viewing Details -->
+    <div id="detailsModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modalCompanyName"></h2>
+            <p id="modalProgramName"></p>
+            <p id="modalDuration"></p>
+            <p id="modalStartDate"></p>
+            <p id="modalEndDate"></p>
+            <p id="modalMode"></p>
+            <p id="modalType"></p>
+            <p id="modalFees"></p>
+            <p id="modalLocation"></p>
+            <p id="modalMobile"></p>
+            <p id="modalEmail"></p>
+            <p id="modalDescription"></p>
+
+            <h3>I'm Interested</h3>
+            <form id="interestForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+
+                <label for="mobile">Mobile Number:</label>
+                <input type="text" id="mobile" required>
+
+                <label for="whatsapp">WhatsApp Number:</label>
+                <input type="text" id="whatsapp" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+
+                <label for="education">Educational Qualification:</label>
+                <input type="text" id="education" required>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+                  </html>
