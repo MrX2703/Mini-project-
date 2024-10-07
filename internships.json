@@ -1,0 +1,16 @@
+[
+    {
+        "companyName": "ABC Corp",
+        "programName": "Web Development Intern",
+        "duration": "3 Months",
+        "startDate": "2024-11-01",
+        "endDate": "2025-01-31",
+        "mode": "Online",
+        "type": "Paid",
+        "fees": "$500",
+        "location": "Remote",
+        "mobile": "123-456-7890",
+        "email": "contact@abccorp.com",
+        "description": "Learn full-stack web development..."
+    }
+]
